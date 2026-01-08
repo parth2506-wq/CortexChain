@@ -84,7 +84,7 @@ genai_supplychain_ai/
 ├── dashboard/ # Streamlit application
 ├── outputs/ # Predictions & AI insights
 ├── config/ # Configuration files
-└── demo/ # Hackathon presentationcture
+└── demo/ # Hackathon presentation
 
 ---
 
@@ -141,5 +141,3 @@ Team : CortexChain
 
 ## 🏁 Conclusion
 This project demonstrates how Generative AI can transform predictions into meaningful business decisions, enabling organizations to act before problems occur rather than reacting afterward.
-
----
