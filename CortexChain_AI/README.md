@@ -64,6 +64,7 @@ date, product_id, sales, inventory_level, supplier_delay
 - NumPy
 - Scikit-learn
 - Statsmodels (ARIMA)
+- Pickle
 
 ### Generative AI
 - Large Language Model (LLM)
@@ -141,3 +142,4 @@ Team : CortexChain
 
 ## 🏁 Conclusion
 This project demonstrates how Generative AI can transform predictions into meaningful business decisions, enabling organizations to act before problems occur rather than reacting afterward.
+
