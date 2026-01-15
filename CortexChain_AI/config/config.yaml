@@ -52,20 +52,15 @@ features:
   drop_na: true                             # Remove rows with missing lag data
 
 # -------------------------------
-# LOCAL LLM (DEEPSEEK-R1 1.5B)
+# OPENAI LLM SETTINGS
 # -------------------------------
-local_llm:
-  enabled: true                             # Enable local reasoning model
-  model_name: "deepseek-r1-1.5b"            # Name of downloaded DeepSeek model
-  model_path: "./models/deepseek-r1-1.5b"   # Local filesystem path to model
-  backend: "transformers"                   # Backend used to load the model
-
-  temperature: 0.2                          # Low value = logical, stable explanations
-  max_new_tokens: 250                       # Max tokens generated per explanation
-  device: "auto"                            # Auto-select CPU or GPU
-  dtype: "float16"                          # Memory-efficient precision
-
-  system_role: "supply_chain_analyst"       # Role/persona for explanations
+openai_llm:
+  enabled: true                             # Turns OpenAI-based explanations on or off
+  provider: "openai"                        # Specifies OpenAI as the LLM provider
+  model_name: "gpt-5.2"                     # OpenAI model used for reasoning and explanations
+  temperature: 0.2                          # Controls randomness (low = stable, logical output)
+  max_tokens: 250                           # Limits length of each generated explanation
+  system_role: "supply_chain_analyst"       # Sets the expert persona for responses
 
 # -------------------------------
 # OUTPUT & LOGGING
@@ -74,3 +69,4 @@ output:
   save_forecasts: true                      # Save forecasts to output files
   save_explanations: true                   # Save generated explanations
   verbosity: 1                              # Logging level (0=quiet, 2=debug)
+
